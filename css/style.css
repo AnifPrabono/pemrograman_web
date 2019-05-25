@@ -1,0 +1,97 @@
+/* ==================================== */
+/* =============== HOME =============== */
+/* ==================================== */
+
+/* awal header */
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover,
+a:focus {
+
+    text-decoration: none;
+    color: blue;
+}
+
+#mu-header {
+    background-color: #ffffff;
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+#mu-header .mu-header-area {
+    display: inline;
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+
+#mu-header .mu-header-area .mu-header-top-left {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+#mu-header .mu-header-area .mu-header-top-left .mu-top-email {
+    display: inline;
+    float: left;
+    font-size: 14px;
+    color: black;
+}
+
+#mu-header .mu-header-area .mu-header-top-left .mu-top-email i {
+    margin-right: 5px;
+}
+
+#mu-header .mu-header-area .mu-header-top-left .mu-top-phone {
+    border-left: 1px solid rgb(0, 0, 0);
+    display: inline;
+    font-size: 14px;
+    float: left;
+    margin-left: 15px;
+    padding-left: 15px;
+    color: black;
+}
+
+#mu-header .mu-header-area .mu-header-top-left .mu-top-phone i {
+    margin-right: 5px;
+}
+
+#mu-header .mu-header-area .mu-header-top-right {
+    display: inline;
+    float: left;
+    text-align: right;
+    width: 100%;
+}
+
+#mu-header .mu-header-area .mu-header-top-right .mu-top-social-nav {
+    display: inline-block;
+}
+
+#mu-header .mu-header-area .mu-header-top-right .mu-top-social-nav li {
+    display: inline-block;
+}
+
+#mu-header .mu-header-area .mu-header-top-right .mu-top-social-nav li a {
+    display: inline-block;
+    color: black;
+    font-size: 15px;
+    padding: 0 12px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* akhir header */
