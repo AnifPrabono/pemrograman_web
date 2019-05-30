@@ -96,5 +96,27 @@ a:focus {
 
 /* akhir header */
 
+/* start navbar */
 
-/*coba menambahkan baris*/
+/* #menu {
+    color: white;
+    text-decoration: none;
+}
+
+.active,
+#menu:hover {
+    color: blue;
+    text-decoration: underline;
+} */
+
+#menu-login li a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu-login li a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+/* finish navbar */
