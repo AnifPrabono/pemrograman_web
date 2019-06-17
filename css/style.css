@@ -22,38 +22,38 @@ a:focus {
     color: blue;
 }
 
-#mu-header {
+#header {
     background-color: #ffffff;
     display: inline;
     float: left;
     width: 100%;
 }
 
-#mu-header .mu-header-area {
+#header .header-area {
     display: inline;
     float: left;
     padding: 10px;
     width: 100%;
 }
 
-#mu-header .mu-header-area .mu-header-top-left {
+#header .header-area .header-top-left {
     display: inline;
     float: left;
     width: 100%;
 }
 
-#mu-header .mu-header-area .mu-header-top-left .mu-top-email {
+#header .header-area .header-top-left .top-email {
     display: inline;
     float: left;
     font-size: 14px;
     color: black;
 }
 
-#mu-header .mu-header-area .mu-header-top-left .mu-top-email i {
+#header .header-area .header-top-left .top-email i {
     margin-right: 5px;
 }
 
-#mu-header .mu-header-area .mu-header-top-left .mu-top-phone {
+#header .header-area .header-top-left .top-phone {
     border-left: 1px solid rgb(0, 0, 0);
     display: inline;
     font-size: 14px;
@@ -63,35 +63,31 @@ a:focus {
     color: black;
 }
 
-#mu-header .mu-header-area .mu-header-top-left .mu-top-phone i {
+#header .header-area .header-top-left .top-phone i {
     margin-right: 5px;
 }
 
-#mu-header .mu-header-area .mu-header-top-right {
+#header .header-area .header-top-right {
     display: inline;
     float: left;
     text-align: right;
     width: 100%;
 }
 
-#mu-header .mu-header-area .mu-header-top-right .mu-top-social-nav {
+#header .header-area .header-top-right .top-social-nav {
     display: inline-block;
 }
 
-#mu-header .mu-header-area .mu-header-top-right .mu-top-social-nav li {
+#header .header-area .header-top-right .top-social-nav li {
     display: inline-block;
 }
 
-#mu-header .mu-header-area .mu-header-top-right .mu-top-social-nav li a {
+#header .header-area .header-top-right .top-social-nav li a {
     display: inline-block;
     color: black;
     font-size: 15px;
     padding: 0 12px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+
 }
 
 /* akhir header */
