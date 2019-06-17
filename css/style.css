@@ -94,16 +94,6 @@ a:focus {
 
 /* start navbar */
 
-/* #menu {
-    color: white;
-    text-decoration: none;
-}
-
-.active,
-#menu:hover {
-    color: blue;
-    text-decoration: underline;
-} */
 
 #menu-login li a {
     color: white;
@@ -116,3 +106,19 @@ a:focus {
 }
 
 /* finish navbar */
+
+/* start content */
+
+#popular {
+    font-family: 'Bahnschrift Light';
+    font-size: 40px;
+    color: black;
+    padding-bottom: 3%;
+}
+
+#row-up {
+    padding-bottom: 4%;
+
+}
+
+/* finish content */
