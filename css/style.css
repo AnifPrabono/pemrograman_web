@@ -130,3 +130,23 @@ a:focus {
 }
 
 /* finish hotel-partner */
+
+/* about */
+#about1{
+    padding-top: 7%;
+    margin-left: 2%;
+    text-align: left;
+}
+
+#about2{
+    padding-top: 2%;
+    margin-left: 30%;
+    text-align: justify;
+}
+
+#imgabout1{
+    padding-top: 7%;
+    margin-right: 2%;
+}
+
+/* finish about*/
