@@ -133,20 +133,43 @@ a:focus {
 
 /* about */
 #about1{
-    padding-top: 7%;
+    padding-top: 20%;
+    padding-right: 10%;
     margin-left: 2%;
-    text-align: left;
 }
 
 #about2{
-    padding-top: 2%;
-    margin-left: 30%;
-    text-align: justify;
+    padding-top: 1%;
+    margin-left: 20%;
 }
 
-#imgabout1{
-    padding-top: 7%;
+#about3{
+	padding-top: 15%;
+	margin-right: 2%;
+}
+
+#about4{
+	padding-top: 15%;
+	margin-left: 2%;
+}
+
+#imgabouttop{
+    padding-top: 20%;
     margin-right: 2%;
 }
 
+#imgabout1{
+    padding-top: 30%;
+    margin-left: 2%;
+}
+
+#imgabout2{
+    padding-top: 30%;
+    margin-right: 2%;
+}
 /* finish about*/
+
+/*start kelompok*/
+
+
+/*finish kelompok*/
