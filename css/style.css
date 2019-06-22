@@ -94,7 +94,6 @@ a:focus {
 
 /* start navbar */
 
-
 #menu-login li a {
     color: white;
     text-decoration: none;
@@ -113,12 +112,19 @@ a:focus {
     font-family: 'Bahnschrift Light';
     font-size: 40px;
     color: black;
-    padding-bottom: 3%;
+    padding-bottom: 0%;
+}
+
+hr.new2 {
+    border-top: 2px solid #e708e7;
+    width: 10%;
+    border-radius: 50px;
 }
 
 #row-up {
     padding-bottom: 4%;
-
+    padding-top: 4%;
+    text-align: center;
 }
 
 /* finish content */
@@ -126,50 +132,196 @@ a:focus {
 /* start hotel-partner */
 #hotel-partner {
     background-color: #ffffff;
-
 }
 
 /* finish hotel-partner */
 
-/* about */
-#about1{
+/* start footer */
+
+#footer {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+#footer .footer-top {
+    background-image: linear-gradient(to right, #610a61, #b907b9, #610a61);
+    display: inline;
+    float: left;
+    padding: 50px 0;
+    width: 100%;
+}
+
+#footer .footer-top .footer-top-area {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+#footer .footer-top .footer-top-area .footer-widget {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+#footer .footer-top .footer-top-area .footer-widget h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#footer .footer-top .footer-top-area .footer-widget ul li a {
+    color: #f9f9f9;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px 0 5px 15px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+#footer .footer-top .footer-top-area .footer-widget ul li a:before {
+    left: 0;
+    position: absolute;
+    top: 5px;
+}
+
+
+#footer .footer-top .footer-top-area .footer-widget p {
+    color: #f9f9f9;
+}
+
+#footer .footer-top .footer-top-area .footer-widget .subscribe-form {
+    display: inline;
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#footer .footer-top .footer-top-area .footer-widget .subscribe-form input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000;
+    font-size: 15px;
+    height: 35px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+#footer .footer-top .footer-top-area .footer-widget .subscribe-form .subscribe-btn {
+    color: white;
+    border: medium none;
+    border-radius: 4px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+}
+
+#footer .footer-top .footer-top-area .footer-widget address p {
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+}
+
+#footer .footer-bottom {
+    background-color: #e708e7;
+    display: inline;
+    float: left;
+    padding: 25px 0;
+    width: 100%;
+}
+
+#footer .footer-bottom .footer-bottom-area {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+#footer .footer-bottom .footer-bottom-area p {
+    color: #fff;
+    margin-bottom: 0;
+    letter-spacing: 0.3px;
+}
+
+#footer .footer-bottom .footer-bottom-area p a {
+    color: #fff;
+
+}
+
+/* finish footer */
+
+/* start btn to top */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 8px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+#myBtn:hover {
+
+    background-image: linear-gradient(to right, #610a61, #b907b9, #610a61);
+
+}
+
+/* finish btn to top */
+
+/* ==================================== */
+/* =============== ABOUT =============== */
+/* ==================================== */
+
+
+/* start about */
+#about1 {
     padding-top: 20%;
     padding-right: 10%;
     margin-left: 2%;
 }
 
-#about2{
+#about2 {
     padding-top: 1%;
     margin-left: 20%;
 }
 
-#about3{
-	padding-top: 15%;
-	margin-right: 2%;
+#about3 {
+    padding-top: 15%;
+    margin-right: 2%;
 }
 
-#about4{
-	padding-top: 15%;
-	margin-left: 2%;
+#about4 {
+    padding-top: 15%;
+    margin-left: 2%;
 }
 
-#imgabouttop{
+#imgabouttop {
     padding-top: 20%;
     margin-right: 2%;
 }
 
-#imgabout1{
+#imgabout1 {
     padding-top: 30%;
     margin-left: 2%;
 }
 
-#imgabout2{
+#imgabout2 {
     padding-top: 30%;
     margin-right: 2%;
 }
+
 /* finish about*/
 
-/*start kelompok*/
+/* start kelompok */
 
 
-/*finish kelompok*/
+/* finish kelompok */
