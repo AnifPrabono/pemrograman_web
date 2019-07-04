@@ -43,7 +43,7 @@
                                 <div class="header-top-right">
                                     <nav>
                                         <ul class="top-social-nav">
-                                            <li><a href="https://www.w3schools.com" target="_blank"><span
+                                            <li><a href="https://www.facebook.com/anif.cuwakeps" target="_blank"><span
                                                         class="fab fa-facebook"></span></a></li>
                                             <li><a href="https://www.instagram.com/nifanif/" target="_blank"><span
                                                         class="fab fa-instagram"></span></a></li>
@@ -127,6 +127,25 @@
     <!-- finish navbar -->
 
     <!-- start bootstrap slider -->
+    <script>
+        var elem = document.getElementById("myvideo");
+
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+                /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+                /* Chrome, Safari & Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+
     <div class="bd-example">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -136,7 +155,9 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/slider/1.jpg" class="d-block w-100" alt="..." style="height:500px">
+                    <video autoplay muted loop width="100%" height="500px" id="myVideo" class="d-block w-100" alt="...">
+                        <source src="video/Bali.mp4" type="video/mp4" style="width: 200px;">
+                    </video>
                     <div class="carousel-caption d-none d-md-block animated flip delay-1s" style="margin-bottom:11%">
                         <h5>Enjoy Your</h5>
                         <h1 style="font-size:70PX; font-family:Lucida Handwriting">HOLIDAY</h1>
@@ -178,6 +199,7 @@
         </div>
     </div>
     <!-- finish bootstrap slider -->
+
     <!-- start most popular destination -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -291,6 +313,7 @@
         </div>
     </div>
     <!-- finish most popular destination -->
+
     <!-- start hotel-partner -->
     <div class="jumbotron jumbotron-fluid" id="hotel-partner">
         <div class="container">
@@ -428,6 +451,7 @@
         </div>
     </div>
     <!-- finish hotel-partner -->
+
     <!-- Start footer -->
     <footer id="footer">
         <!-- start footer top -->
