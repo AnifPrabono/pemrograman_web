@@ -37,6 +37,404 @@
     <!-- #################################################################################################################### -->
 
 
+ 
+    <script>
+        $(document).ready(function () {
+            jQuery("#nanoGallery4").nanoGallery({
+                userID: '34858669@N00',
+                kind: 'flickr',
+                thumbnailWidth: 'auto',
+                thumbnailHeight: 160, //110,
+                viewerDisplayLogo: true,
+                locationHash: false,
+                thumbnailHoverEffect: [{
+                    'name': 'labelSlideUp',
+                    'duration': 300
+                }],
+                thumbnailLabel: {
+                    display: true,
+                    position: 'overImageOnBottom',
+                    descriptionMaxLength: 50
+                },
+                thumbnailLazyLoad: true,
+                theme: 'clean',
+                colorScheme: 'light',
+                locationHash: false,
+                level1: {
+                    thumbnailWidth: 200,
+                    thumbnailHeight: 120
+                }
+            });
+
+
+            // ##################################################################################################################
+            // ##### Multi-level navigation (API method) #####
+            // ##################################################################################################################
+            var contentGalleryMLN = [{
+                    src: 'image_01.jpg', // image url
+                    srct: 'image_01ts.jpg', // thumbnail url
+                    title: 'image 01', // thumbnail title
+                    ID: 2
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 02',
+                    ID: 3
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'album 1',
+                    ID: 103,
+                    kind: 'album'
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'album 2',
+                    ID: 104,
+                    kind: 'album'
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'album 3',
+                    ID: 105,
+                    albumID: 103,
+                    kind: 'album'
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 03',
+                    ID: 4
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 04',
+                    ID: 5
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 05',
+                    ID: 6
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 06',
+                    ID: 7
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 07',
+                    ID: 8
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 08',
+                    ID: 9
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 09',
+                    ID: 10
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 10',
+                    ID: 11
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 10',
+                    ID: 12
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 11',
+                    ID: 13
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 12',
+                    ID: 14
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 13',
+                    ID: 15
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 14',
+                    ID: 16
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 15',
+                    ID: 17
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 16',
+                    ID: 18
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 17',
+                    ID: 19
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 18',
+                    ID: 20
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 19',
+                    ID: 21
+                },
+                {
+                    src: 'image_02.jpg',
+                    srct: 'image_02ts.jpg',
+                    title: 'image 20',
+                    ID: 22
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 1a',
+                    ID: 23,
+                    albumID: 103
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 1b',
+                    ID: 24,
+                    albumID: 103
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 1c',
+                    ID: 25,
+                    albumID: 103
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 1d',
+                    ID: 26,
+                    albumID: 103
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 1e',
+                    ID: 27,
+                    albumID: 103
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 1f',
+                    ID: 28,
+                    albumID: 103
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2a',
+                    ID: 29,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2b',
+                    ID: 30,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2c',
+                    ID: 31,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2d',
+                    ID: 32,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2e',
+                    ID: 33,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2f',
+                    ID: 34,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2g',
+                    ID: 35,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2h',
+                    ID: 36,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2i',
+                    ID: 37,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2j',
+                    ID: 38,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2k',
+                    ID: 39,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2l',
+                    ID: 40,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2m',
+                    ID: 41,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2n',
+                    ID: 42,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2o',
+                    ID: 43,
+                    albumID: 104
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2n',
+                    ID: 44,
+                    albumID: 105
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2n',
+                    ID: 45,
+                    albumID: 105
+                },
+                {
+                    src: 'image_03.jpg',
+                    srct: 'image_03ts.jpg',
+                    title: 'image 2o',
+                    ID: 46,
+                    albumID: 105
+                }
+            ];
+
+            jQuery("#nanoGalleryMLN").nanoGallery({
+                thumbnailWidth: 120,
+                thumbnailHeight: 120,
+                items: contentGalleryMLN,
+                //paginationMaxItemsPerPage:3,
+                paginationMaxLinesPerPage: 1,
+                //        paginationDots : true,
+                paginationVisiblePages: 10,
+                thumbnailHoverEffect: 'imageInvisible,imageScale150',
+                viewerDisplayLogo: true,
+                useTags: false,
+                locationHash: false,
+                breadcrumbAutoHideTopLevel: true,
+                maxItemsPerLine: 5,
+                locationHash: false,
+                itemsBaseURL: 'demonstration/'
+            });
+
+            jQuery('#btnPaginationCount').on('click', function () {
+                alert(jQuery('#nanoGalleryMLN').nanoGallery('paginationCountPages'));
+            });
+            jQuery('#btnPaginationNext').on('click', function () {
+                jQuery('#nanoGalleryMLN').nanoGallery('paginationNextPage');
+            });
+            jQuery('#btnPaginationPrevious').on('click', function () {
+                jQuery('#nanoGalleryMLN').nanoGallery('paginationPreviousPage');
+            });
+            jQuery('#btnPaginationGoto').on('click', function () {
+                jQuery('#nanoGalleryMLN').nanoGallery('paginationGotoPage', 2);
+            });
+
+            // ##################################################################################################################
+            // ##### DEMO PANEL #####
+            // ##################################################################################################################
+            jQuery("#nanoGalleryAnimation1").nanoGalleryDemo({
+                thumbnailWidth: 120,
+                thumbnailHeight: 120,
+                itemsBaseURL: 'demonstration',
+                viewerDisplayLogo: true
+            });
+        });
+    </script>
+
+    <!-- finish jQuery gallery plugin -->
+    
+
+
 
     <title>KUY.com</title>
 
