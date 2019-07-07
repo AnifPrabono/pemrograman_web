@@ -156,7 +156,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" style="height: 500px; width: 100%;">
                     <video autoplay loop id="myVideo" class="d-block w-100" alt="...">
-                        <source src="video/Bali-1.m4v" type="video/mp4" style="width: 200px;">
+                        <source src="video/Explore.m4v" type="video/mp4">
                     </video>
                     <div class="carousel-caption d-none d-md-block animated flip delay-1s" style="margin-bottom:11%">
                         <h5>Enjoy Your</h5>
@@ -299,6 +299,76 @@
         </div>
     </div>
     <!-- finish most popular destination -->
+
+ <!-- Start weather -->
+    <div class="container" style="padding: 3% 0;">
+        <div class="card text-center"
+            style="border: 2px solid #e708e7;box-shadow: 0 8px 16px 0 rgba(197, 38, 149, 0.445); border-radius: 5px; ">
+            <div class="card-header"
+                style="border-bottom: 2px solid #e708e7; font-size: 30px; color: #e708e7; font-family:Consolas;">
+                Weather
+            </div>
+            <div class="card-body"
+                style="border-bottom: 2px solid #e708e7; background-image: url(https://cms-assets.tutsplus.com/uploads/users/1500/posts/28329/image/nature_night_background_with_lamp.jpg); color: white; font-size: 25px;">
+                <h5 class="card-title" style="font-family:Lucida Handwriting;">Check current weather conditions</h5>
+
+                <div style="font-family:Consolas;" class="bg"></div>
+                <div>
+                    <div style="font-family:Consolas;" id="description"></div>
+                    <h1 style="font-family:Consolas;" id="temp"></h1>
+                    <div style="font-family:Consolas;" id="location"></div>
+                </div>
+                <!---->
+                <script>
+                    const key = '32b0ef76f94ec4696d05de76d3ecadc3';
+                    if (key == '32b0ef76f94ec4696d05de76d3ecadc3') document.getElementById('temp').innerHTML = (
+                        'Remember to add your api key!');
+
+                    function weatherBallon(cityID) {
+                        fetch('https://api.openweathermap.org/data/2.5/weather?q=Sleman,ID' +
+                                '&appid=32b0ef76f94ec4696d05de76d3ecadc3')
+                            .then(function (resp) {
+                                return resp.json()
+                            }) // Convert data to json
+                            .then(function (data) {
+                                drawWeather(data);
+                            })
+                            .catch(function () {
+                                // catch any errors
+                            });
+                    }
+
+                    function drawWeather(d) {
+                        var celcius = Math.round(parseFloat(d.main.temp) - 273.15);
+                        var fahrenheit = Math.round(((parseFloat(d.main.temp) - 273.15) * 1.8) + 32);
+                        var description = d.weather[0].description;
+
+                        document.getElementById('description').innerHTML = description;
+                        document.getElementById('temp').innerHTML = celcius + '&deg;';
+                        document.getElementById('location').innerHTML = d.name;
+
+                        if (description.indexOf('rain') > 0) {
+                            document.body.className = 'rainy';
+                        } else if (description.indexOf('cloud') > 0) {
+                            document.body.className = 'cloudy';
+                        } else if (description.indexOf('sunny') > 0) {
+                            document.body.className = 'sunny';
+                        } else {
+                            document.body.className = 'clear';
+                        }
+                    }
+                    window.onload = function () {
+                        weatherBallon(6167865);
+                    }
+                </script>
+            </div>
+            <div class="card-footer" style="font-size: 25px; color: #e708e7; font-family:Consolas;">
+                Today
+            </div>
+        </div>
+    </div>
+    <!-- Finish weather -->
+
 
     <!-- Start Popular Group Packages -->
     <div class="container">
