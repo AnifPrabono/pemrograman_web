@@ -550,6 +550,65 @@
     <!-- finish navbar -->
 
 
+    <!-- start section -->
+
+    <div class="hero-image-gallery">
+        <div class="hero-text">
+            <i class="carousel-caption d-none d-md-block animated slideInUp">
+                <h1 style="font-size:40PX;">Gallery</h1>
+                <p>Enjoy Your Holiday</p>
+                <p class="fas fa-angle-double-down"></p>
+            </i>
+        </div>
+    </div>
+
+    <!-- finish section -->
+
+    <!-- start video gallery -->
+    <div class="container-gallery">
+        <div class="row">
+            <div class="col-md-6">
+                <video loop width="100%" height="100%" controls id="myvideo" style="border:2px solid #e708e7;">
+                    <source src="video/girl.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-md-6">
+                <p>dasdsadafsvfdgdfgfdgdvdgd</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var elem = document.getElementById("myvideo");
+
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+                /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+                /* Chrome, Safari & Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+
+    <!-- finish video gallery -->
+
+    <!-- start gallery plugin jquery-->
+    <div class="row" style="background: #e9ecef; padding-top: 1%; padding-bottom: 2%;">
+        <div class="col-md-12">
+            <div style="margin:auto;max-width:1200px; ">
+                <div id="nanoGallery4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- finish gallery plugin jquery-->
 
 
     <!-- Start footer -->
